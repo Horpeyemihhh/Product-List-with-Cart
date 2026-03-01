@@ -1,0 +1,402 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: hsl(13, 31%, 94%);
+    padding: 20px;
+    height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+
+#headings {
+    font-size: 18px;
+    font-weight: 900px;
+    margin-bottom: 10px;
+}
+
+/* Product Grid */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(185px, 1fr));
+    row-gap: 12px;
+    column-gap: 0px;
+}
+
+.product-card {
+    background: hsl(13, 31%, 94%);
+    border-radius: 10px;
+    width: 80%;
+    /*position: relative;*/
+}
+
+/*.product-card img {
+    width: 100%;
+    border-radius: 8px;
+    height: auto;
+    display: block;
+}
+
+.product-card div {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.product-card button {
+    
+    font-size: 8px;
+    border-radius: 25%;
+    padding: 2px 15px;
+    border: 1;
+}*/
+
+.imgDiv {
+    position: relative;
+}
+
+.imgDiv img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    
+    display: block;
+}
+
+.addCartBtn {
+    position: absolute;
+    bottom: -10px;
+    left: 30%;
+    font-size: 8px;
+    border-radius: 25px;
+    border: 1px solid #999;
+    padding: 5px 10px;
+    background-color: hsl(20, 50%, 98%);
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.addCartBtn img {
+    height: 9px;
+    width: 9px;
+    
+}
+
+.quantity-controls {
+    position: absolute;
+    bottom: -14px;
+    left: 30%;
+    font-size: 8px;
+    border-radius: 25px;
+    padding: 7px 10px;
+    background-color: hsl(14, 86%, 42%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+}
+
+.qty-btn {
+    border: 1px solid hsl(13, 31%, 94%);
+    border-radius: 50%;
+    background-color: hsl(14, 86%, 42%);
+    cursor: pointer;
+}
+
+.qty-btn img {
+    width: 9px;
+    height: 9px;
+    background-color: hsl(14, 86%, 42%);
+    margin: 1px;
+}
+
+.qty-display {
+    margin: 0px 18px;
+    font-size: 11px;
+    color: hsl(13, 31%, 94%);
+}
+
+
+
+
+.product-card p {
+    margin-top: 10px;
+    font-size: 8px;
+    font-weight: 100px;
+    color: hsl(14, 25%, 72%);
+}
+
+.product-card h3 {
+    margin-top: 5px;
+    font-size: 9px;
+}
+
+.product-card p.price {
+    margin-top: 5px;
+    font-size: 9px;
+    font-weight: 800px;
+    color: hsl(14, 86%, 42%);
+}
+
+
+
+
+.add-to-cart-btn {
+    /* Button styling */
+}
+
+.quantity-controls {
+    /* +/- buttons */
+}
+
+/* Shopping Cart */
+.cart {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    /*position: sticky;*/
+    top: 20px;
+    height: fit-content;
+}
+
+.cart h2 {
+    font-size: 15px;
+    font-weight: 800px;
+    color: hsl(14, 86%, 42%);
+}
+
+#emptyCart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#emptyCart p {
+    font-size: 9px;
+}
+
+#orderTotal {
+    display: none;
+}
+
+#orderTotal p {
+    font-size: 10px;
+    padding: 15px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#orderTotal p span {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#orderTotal div {
+    font-size: 9px;
+    background-color: hsl(13, 31%, 94%);
+    margin: 10px 0px 20px;
+    padding: 10px;
+}
+
+#orderTotal div img {
+    height: 12px;
+    width: 15px;
+    margin-right: 5px;
+}
+
+#orderTotal div span {
+    font-weight: bold;
+}
+
+#orderTotal button {
+    padding: 15px 50px;
+    background-color: hsl(14, 86%, 42%);
+    border-radius: 25px;
+    border: none;
+    width: 100%;
+    color: hsl(20, 50%, 98%);
+    cursor: pointer;
+}
+
+.cart-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cart-item-name {
+    margin-top: 5px;
+    font-size: 10px;
+}
+
+.cart-item-details {
+    margin-top: 5px;
+    font-size: 10px;
+    font-weight: 100px;
+    color: hsl(14, 25%, 72%);
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+}
+
+.cart-qty {
+    color: hsl(14, 86%, 42%);
+    font-weight: bold;
+}
+
+.remove-btn {
+    border-radius: 50%;
+    border: 1px solid #999;
+    background-color: hsl(20, 50%, 98%);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.remove-btn img {
+    background-color: hsl(20, 50%, 98%);
+    width: 9px;
+    height: 9px;
+    margin: 2px;
+}
+
+.line {
+    border: none;
+    height: 1px;
+    background: rgba(0,0,0,0.2);
+}
+
+
+
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color:hsl(20, 50%, 98%);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.orderConfirmedimg {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.comfirmDiv {
+    background-color: hsl(13, 31%, 94%);
+    padding: 10px;
+    margin: 15px 0px;
+}
+
+.comfirmedLine {
+    border: none;
+    height: 1px;
+    background: rgba(0,0,0,0.2);
+}
+
+.ordered-Items {
+    margin-bottom: 10px;
+}
+
+.confirmed-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0px;
+    gap: 100px;
+}
+
+.confirmed-item-image {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+.confirmed-item-details h4 {
+    margin-top: 5px;
+    font-size: 10px;
+}
+
+.confirmed-item-price {
+    margin-top: 5px;
+    font-size: 10px;
+    font-weight: 100px;
+    color: hsl(14, 25%, 72%);
+    display: flex;
+    flex-direction: row;
+    gap: 7px; 
+}
+
+.confirmed-qty {
+    color: hsl(14, 86%, 42%);
+    font-weight: bold;
+}
+
+.confirmed-item-total {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.confirmed-item-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.confirmedTotal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+}
+
+.confirmedTotal span {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.start-new-order-btn {
+    padding: 15px 50px;
+    background-color: hsl(14, 86%, 42%);
+    border-radius: 25px;
+    border: none;
+    width: 100%;
+    color: hsl(20, 50%, 98%);
+    cursor: pointer;
+}

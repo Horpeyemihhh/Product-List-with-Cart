@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script defer src="index.js"></script>
+    <title>Product List with Cart</title>
+</head>
+<body>
+   <div class="container">
+     <div>
+        <h2 id="headings">Desserts</h2>
+
+        <div id="productsList" class="products-grid">
+
+        </div>
+     </div>
+
+     <div class="cart">
+        <h2>Your Cart (<span id="cartCount">0</span>)</h2>
+
+        <div id="cartItemsList"></div>
+        <div id="emptyCart">
+            <img src="icon/illustration-empty-cart.svg" alt="">
+            <p>Your added items will appear here</p>
+        </div>
+
+        <div id="orderTotal">
+            <p>Order Total <span id="totalPrice">0.00</span></p>
+
+            <center>
+                <div><img src="icon/icon-carbon-neutral.svg" alt="carbon-neutral"> This is a <span>carbon-neutral</span> delivery</div>
+
+                <button id="confirmBtn" class="confirm-btn" onclick="showConfirmationModal()">Confirm Order</button>
+            </center>
+        </div>
+     </div>
+   </div>
+   
+   <div id="confirmModal" class="modal">
+    <div class="modal-content">
+        <img src="icon/icon-order-confirmed.svg" alt="order-confirmed" class="orderConfirmedimg">
+
+        <h2>Order Confirmed</h2>
+
+        <div id="orderSummary" style="font-size: 9px; margin: 5px 0px 10px; color: hsl(14, 25%, 72%);">We hope you enjoy your food!</div>
+
+        <div class="comfirmDiv">
+            <div class="ordered-Items" id="confirmedItemsList"></div>
+
+            <p class="confirmedTotal">Order Total <span id="modalTotalPrice">0.00</span></p>
+        </div>
+
+        <button class="start-new-order-btn" onclick="startNewOrder()">Start New Order</button>
+    </div>
+   </div>
+</body>
+</html>
