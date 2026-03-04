@@ -37,7 +37,6 @@ body {
     background: hsl(13, 31%, 94%);
     border-radius: 10px;
     width: 80%;
-    /*position: relative;*/
 }
 
 .imgDiv {
@@ -378,4 +377,5 @@ body {
     cursor: pointer;
 
 }
+
 
