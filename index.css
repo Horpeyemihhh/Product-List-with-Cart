@@ -52,7 +52,7 @@ body {
 
 .addCartBtn {
     position: absolute;
-    bottom: -10px;
+    bottom: -8px;
     left: 50%;
     transform: translateX(-50%);
     font-size: 8px;
@@ -73,7 +73,7 @@ body {
 
 .quantity-controls {
     position: absolute;
-    bottom: -14px;
+    bottom: -8px;
     left: 50%;
     transform: translateX(-50%);
     font-size: 8px;
@@ -102,7 +102,7 @@ body {
 }
 
 .qty-display {
-    margin: 0px 8px;
+    margin: 0px 1.125rem;
     font-size: 11px;
     color: hsl(13, 31%, 94%);
 }
@@ -372,7 +372,7 @@ body {
 
 @media (max-width: 768px) {
     body {
-        padding: 12px;
+        padding: 15px;
     }
     
     .container {
@@ -383,6 +383,7 @@ body {
     #headings {
         font-size: 15px;
         margin-bottom: 10px;
+        position: sticky;
     }
     
     .products-grid {
@@ -406,6 +407,10 @@ body {
         width: 4px;
     }
 
+    .product-card {
+    width: 100%;
+    }
+
     .product-card p {
     margin-top: 8px;
     font-size: 5px;
@@ -425,7 +430,7 @@ body {
     .quantity-controls {
         font-size: 6px;
         padding: 3px 6px;
-        bottom: -14px;
+        bottom: -8px;
     }
 
     .qty-btn img {
@@ -434,10 +439,11 @@ body {
     }
 
     .qty-display {
-        margin: 0px 3px;
-        font-size: 7px;
+        margin: 0px 1.125rem;
+        font-size: 8px;
     }
 }
+
 
 
 
