@@ -383,7 +383,10 @@ body {
     #headings {
         font-size: 15px;
         margin-bottom: 10px;
-        position: sticky;
+    }
+
+    #title {
+       position: sticky; 
     }
     
     .products-grid {
@@ -399,12 +402,12 @@ body {
     
     .addCartBtn {
         font-size: 5px;
-        padding: 3px 6px;
+        padding: 4px 7px;
     }
 
     .addCartBtn img {
-        height: 4px;
-        width: 4px;
+        height: 5px;
+        width: 5px;
     }
 
     .product-card {
@@ -429,7 +432,7 @@ body {
 
     .quantity-controls {
         font-size: 6px;
-        padding: 3px 6px;
+        padding: 4px 7px;
         bottom: -8px;
     }
 
@@ -443,6 +446,7 @@ body {
         font-size: 8px;
     }
 }
+
 
 
 
