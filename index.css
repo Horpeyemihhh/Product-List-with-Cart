@@ -41,7 +41,6 @@ body {
 
 .imgDiv {
     position: relative;
-    display: center;
 }
 
 .imgDiv img {
@@ -55,6 +54,7 @@ body {
     position: absolute;
     bottom: -10px;
     left: 50%;
+    transform: translateX(-50%);
     font-size: 8px;
     border-radius: 25px;
     border: 1px solid #999;
@@ -75,6 +75,7 @@ body {
     position: absolute;
     bottom: -14px;
     left: 50%;
+    transform: translateX(-50%);
     font-size: 8px;
     border-radius: 25px;
     padding: 7px 10px;
@@ -379,6 +380,52 @@ body {
 
 }
 
+
+@media (max-width: 768px) {
+    body {
+        padding: 12px;
+    }
+    
+    .container {
+        grid-template-columns: 1fr;  /* Stack vertically */
+        gap: 15px;
+    }
+    
+    #headings {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        gap: 10px;
+    }
+    
+    .imgDiv img {
+        height: 100%;
+        width: 100%;
+    }
+    
+    .addCartBtn {
+        font-size: 6px;
+        padding: 3px 6px;
+    }
+
+    .addCartBtn img {
+        height: 6px;
+        width: 6px;
+    }
+
+    .quantity-controls {
+        font-size: 6px;
+        padding: 3px 6px;
+    }
+
+    .qty-btn img {
+        width: 6px;
+        height: 6px;
+    }
+}
 
 
 
