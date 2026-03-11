@@ -102,7 +102,7 @@ body {
 }
 
 .qty-display {
-    margin: 0px 18px;
+    margin: 0px 8px;
     font-size: 11px;
     color: hsl(13, 31%, 94%);
 }
@@ -134,7 +134,7 @@ body {
     background: white;
     border-radius: 10px;
     padding: 20px;
-    /*position: sticky;*/
+    position: sticky;
     top: 20px;
     height: fit-content;
 }
@@ -376,7 +376,7 @@ body {
     }
     
     .container {
-        grid-template-columns: 2fr;  /* Stack vertically */
+        grid-template-columns: 1fr 1fr;  /* Stack vertically */
         gap: 15px;
     }
     
@@ -387,6 +387,7 @@ body {
     
     .products-grid {
         grid-template-columns: repeat(1, minmax(50px, 1fr));
+        grid-template-rows: repeat(9, auto);
         gap: 10px;
     }
     
@@ -424,7 +425,7 @@ body {
     .quantity-controls {
         font-size: 6px;
         padding: 3px 6px;
-        bottom: -10px;
+        bottom: -14px;
     }
 
     .qty-btn img {
@@ -437,6 +438,7 @@ body {
         font-size: 7px;
     }
 }
+
 
 
 
