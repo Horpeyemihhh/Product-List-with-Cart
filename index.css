@@ -445,7 +445,17 @@ body {
         margin: 0px 1.125rem;
         font-size: 8px;
     }
+
+    #orderTotal button {
+        padding: 10px 20px;
+    }
+
+    #orderTotal div {
+    font-size: 6px;
+    padding: 8px;
+    }
 }
+
 
 
 
